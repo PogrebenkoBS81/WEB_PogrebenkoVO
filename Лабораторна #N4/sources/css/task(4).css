@@ -1,0 +1,12 @@
+#circle {
+    width: 250px;
+    height: 250px;
+    background: #ff0000;
+    border-radius: 50%;
+} 
+#circle:hover { 
+    background-color:#ff0000;
+    transform: scale(0.5,0.5);
+    transition-duration: 0.75s; 
+    transition-timing-function: linear;
+}

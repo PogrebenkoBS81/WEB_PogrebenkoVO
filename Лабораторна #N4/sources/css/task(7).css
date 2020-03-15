@@ -1,0 +1,48 @@
+#first_task {
+    display: flex;
+    flex-wrap: wrap;
+    height: 180px;
+}
+
+#top1{ width: 30%; height: 33%; background: rgb(0, 195, 255);}
+#top2{ width: 15%; height: 33%; background: rgb(0, 255, 170);}
+#top3{ width: 15%; height: 33%; background: rgb(33, 10, 88);}
+#top4{ width: 15%; height: 33%; background: rgb(207, 6, 6);}
+#top5{ width: 25%; height: 33%; background: rgb(30, 255, 0);}
+
+#middle1{ width: 15%; height: 33%; background: rgb(96, 235, 131);}
+#middle2{ width: 20%; height: 33%; background: rgb(78, 14, 121);}
+#middle3{ width: 20%; height: 33%; background: rgb(167, 22, 22);}
+#middle4{ width: 20%; height: 33%; background: rgb(31, 219, 109);}
+#middle5{ width: 25%; height: 33%; background: rgb(49, 92, 44);}
+
+#bottom1{ width: 30%; height: 33%; background: rgb(12, 92, 32);}
+#bottom2{ width: 20%; height: 33%; background: rgb(40, 20, 53);}
+#bottom3{ width: 15%; height: 33%; background: rgb(53, 35, 35);}
+#bottom4{ width: 35%; height: 33%; background: rgb(12, 44, 25);}
+
+#second_task {
+    display: grid;
+    grid-template-rows: 15% 9.5% 16% 11% 5.5% 10.5% 13.5% 19%;
+    grid-template-columns: 26% 18% 12% 18% 26%;
+    height: 300px;
+}
+  
+#block1{grid-column: 1; grid-row: 1; background: rgb(255, 17, 0);}
+#block2{grid-column: 2/6; grid-row: 1; background: rgb(68, 52, 51);}
+#block3{grid-column: 1/4; grid-row: 2; background: rgb(50, 40, 95);}
+#block4{grid-column: 4; grid-row: 2; background: rgb(14, 87, 32);}
+#block5{grid-column: 5; grid-row: 2/6; background: rgb(208, 211, 52);}
+#block6{grid-column: 1; grid-row: 3/5; background: rgb(202, 23, 193);}
+#block7{grid-column: 2/4; grid-row: 3; background: rgb(129, 45, 45);}
+#block8{grid-column: 4; grid-row: 3; background: rgb(6, 146, 53);}
+#block9{grid-column: 1; grid-row: 5/7; background: rgb(23, 13, 158);}
+#block10{grid-column: 2; grid-row: 4/7; background: rgb(24, 116, 65);}
+#block11{grid-column: 3; grid-row: 4/7; background: rgb(57, 21, 141);}
+#block12{grid-column: 4; grid-row: 4/8; background: rgb(148, 136, 32);}
+#block13{grid-column: 5; grid-row: 6/8; background: rgb(68, 10, 60);}
+#block14{grid-column: 1; grid-row: 7/9; background: rgb(238, 175, 38);}
+#block15{grid-column: 2; grid-row: 7; background: rgb(170, 59, 115);}
+#block16{grid-column: 2; grid-row: 8; background: rgb(23, 26, 216);}
+#block17{grid-column: 3; grid-row: 7/9; background: rgb(40, 186, 206);}
+#block18{grid-column: 4/6; grid-row: 8; background: rgb(212, 221, 92);}
