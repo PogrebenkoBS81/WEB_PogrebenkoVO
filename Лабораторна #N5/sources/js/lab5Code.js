@@ -68,7 +68,7 @@ class Person {
     // If there is more than 3 consonants in name, 
     // then the first, third, and fourth consonants are used to generate the code.
     if (consonants.length > 3) {
-      consonants[2] = consonants[3];
+      consonants.splice(1, 1);
     }
 
     return this._codeFromNames(vowels, consonants);
