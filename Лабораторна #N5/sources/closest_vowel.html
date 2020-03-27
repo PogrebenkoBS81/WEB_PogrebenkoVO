@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/lab5ClosestVowel.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Code generator</a>
+        <a href="closest_vowel.html">Closest vowel</a>
+        <a href="rug.html">Check rug for symmetry</a>
+    </div>
+
+    <form>
+        <div class="column">
+            <div class="block">
+                <h1>Check for closest vowel.</h1>
+
+                <div id="rug">
+                    <label for="String">String:</label>
+                    <input type="text" name="String" id="stringField">
+                </div>
+
+                <button onclick="sendResult()" class="button" type="button">Process string</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="column">
+        <div class="block">
+            <h4>Distanses by symbol:</h4>
+            <span class="output-text" id="distanses-field">...</span>
+        </div>
+    </div>
+</body>
+
+</html>

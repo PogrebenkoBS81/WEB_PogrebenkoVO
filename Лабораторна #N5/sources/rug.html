@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/lab5Rug.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Code generator</a>
+        <a href="closest_vowel.html">Closest vowel</a>
+        <a href="rug.html">Check rug for symmetry</a>
+    </div>
+
+    <form>
+        <div class="column">
+            <div class="block">
+                <h1>Input your rug:</h1>
+
+                <div id="rug">
+                    <label for="Rug">Rug:</label>
+                    <input type="text" name="Rug" id="rugField">
+                </div>
+
+                <button onclick="sendResult()" class="button" type="button">Process rug</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- TODO: add drag'n'drop field for rug (JSON).
+    (Basically, I did it, but due to the lack of experience with the js 
+    the resulting code was horrible ( I can't find a normal example for some reason), 
+    so I’ll add it later after some refactoring (maybe).) -->
+    <div class="column">
+        <div class="block">
+            <h4>Your rug is:</h4>
+            <span class="output-text" id="rug-field">...</span>
+        </div>
+    </div>
+</body>
+
+</html>

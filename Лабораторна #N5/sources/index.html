@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/lab5Code.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Code generator</a>
+        <a href="closest_vowel.html">Closest vowel</a>
+        <a href="rug.html">Check rug for symmetry</a>
+    </div>
+
+    <form>
+        <div class="column">
+            <div class="block">
+                <h1>Genereate index.</h1>
+
+                <div id="name">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="nameField">
+                </div>
+
+                <div id="surname">
+                    <label for="Surname">Surname:</label>
+                    <input type="text" name="Surname" id="surnameField">
+                </div>
+
+                <label for="Gender">Gender:</label>
+                <select name="gender" id="genderField">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                </select>
+
+                <!-- It is possible to do this field as a input type="date",
+                but in labN5 format should be "D/M/YYYY" (type="date" has YYYY-MM-DD format,
+                and it's impossible to change)-->
+                <div id="birthdate">
+                    <label for="Birthdate">Birthdate (D/M/YYYY):</label>
+                    <input type="text" name="Birthdate" id="birthdateField">
+                </div>
+
+                <button onclick="sendCode()" class="button" type="button">Generate code</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="column">
+        <div class="block">
+            <h4>Your code will be displayed here:</h4>
+            <span class="output-text" id="fiscal-code">XXXXXX00X00</span>
+        </div>
+    </div>
+</body>
+
+</html>
