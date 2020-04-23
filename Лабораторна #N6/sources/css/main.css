@@ -1,0 +1,63 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.topnav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 15px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.block {
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#blank {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(168, 168, 168);
+    border-bottom: 16px solid rgb(168, 168, 168);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
