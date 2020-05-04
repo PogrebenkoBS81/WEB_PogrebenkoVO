@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta Charset="utf-8">
+      <title>Сайт</title>
+	  <link rel ="stylesheet" href="css/main.css">
+	  <link rel ="stylesheet" href="css/carousel.css">
+      <link rel ="stylesheet" href="css/slider.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="./js/main.js"></script>
+
+	  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" /> -->
+   </head>
+   <body>
+      <div class="home">
+         <div class="width-wrapper">
+            <div class="nav">
+               <a href="#" style="margin-right: 3vw;"><img src="resourses/header/logo.png" style="width: 100%;" alt="Bickeshop"></a>
+               <a>HOME</a>
+               <a href="#new">MENU</a>
+               <a href="#Reservaion">RESERVATION</a>
+               <a href="">RECEPIE</a> 
+               <a href="#about">BLOG</a> 
+               <a href="#about">PAGES</a> 
+               <a href="#about">CONTACT</a> 
+               <a href="#">
+               <img alt="W3Schools" style="width: 100%;" src="resourses/header/cart.png" >
+               </a>
+               <a href="#">
+               <img alt="W3Schools" style="width: 100%;" src="resourses/header/Book your table.png" >
+               </a>
+            </div>
+            <div class="headMiddle">
+               <h1>Teast your fav dish</h1>
+               <h2>from luxury restaurent.</h2>
+               <img alt="W3Schools" style="width: 16%; margin-top: 5vw;" src="resourses/header/icon_phone.png" >
+               <h3>1-008 005 006</h3>
+            </div>
+         </div>
+         <input type="image" id="image1" alt="arrow1"
+            class="verticalBitton1" src="./resourses/header/arrow1.png">
+         <input type="image" id="image2" alt="arrow2"
+            class="verticalBitton2" src="./resourses/header/arrow2.png">
+      </div>
+      <div class="menu">
+      <div class="width-wrapper">
+         <div class="menu-wrapper">
+            <div class="food-menu-wrapper">
+               <h1>Food Menu</h1>
+               <div class="vertical-menu">
+                  <a href="#" class="clearfix">
+                     <div class="description">
+                        <h3>ULTIMATE ORGANIC FRUIT SALAD</h3>
+                        <p>survived not only live centuries but the leap</p>
+                     </div>
+                     <h2> $50.00</h2>
+                  </a>
+                  <a href="#" class="clearfix">
+                     <div class="description">
+                        <h3>PLAIN PANCAKES</h3>
+                        <p>Donec eget augue at diam eusmod viverra</p>
+                     </div>
+                     <h2> $68.00</h2>
+                  </a>
+                  <a href="#" class="clearfix">
+                     <div class="description">
+                        <h3>TOASTED JAM</h3>
+                        <p>Phasellus a ex accumsan soll citudin</p>
+                     </div>
+                     <h2> $22.00</h2>
+                  </a>
+                  <a href="#" class="clearfix">
+                     <div class="description">
+                        <h3>TOASTED JAM</h3>
+                        <p>Phasellus a ex accumsan soll citudin</p>
+                     </div>
+                     <h2> $39.00</h2>
+                  </a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+                  <a href="#" style="font-size: 1vw; " class="clearfix">Placeholder</a>
+               </div>
+               <input type="image" id="image3" alt="food-menue"
+                  class="food-menue-button" src="./resourses/menue/ExplorFoodMenu.png">
+            </div>
+            <div class="cards-wrapper">
+               <h1>Today Special</h1>
+               <div class="clearfix">
+                  <div style="display: flex;">
+                     <div class="card" id="card1" onclick="scaleHandler(this.id)">
+                        <img src="./resourses/menue/Image 320 x 210.png" alt="Special1" style="width:100%">
+                        <div class="card-container">
+                           <h4><b>Pizza Marinara</b></h4>
+                           <p><b>$89.00</b></p>
+                        </div>
+                     </div>
+                     <div class="card" id="card2" onclick="scaleHandler(this.id)">
+                        <img src="./resourses/menue/Image 320 x 172.png" alt="Special2" style="width:100%">
+                        <div class="card-container">
+                           <h4><b>Chicken Noodles</b></h4>
+                           <p><b>$89.00</b></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+	  </div>
+	  
+      <div style="margin-bottom: 5vw">
+         <div></div>
+	  </div>
+	  
+      <div class="form">
+         <img src="./resourses/form/Image293x293.png" id="floating-image1" alt="img1">
+         <div class="width-wrapper">
+            <form class="form-style-9">
+               <h1>Reserve your table</h1>
+               <ul>
+                  <li>
+                     <input type="text" id="field1" name="field1" class="field-style field-split align-left" placeholder="Name*" />
+                     <input type="email" id="field2" name="field2" class="field-style field-split align-right" placeholder="Email address*" />
+                  </li>
+                  <li>
+                     <input type="text" id="field3" name="field3" class="field-style field-split align-left" placeholder="Time*" />
+                     <input type="text" id="field4" name="field4" class="field-style field-split align-right" placeholder="Date*" />
+                  </li>
+                  <li>
+                     <input type="text" id="field5" name="field5" class="field-style field-split align-left" placeholder="Guests*" />
+                     <input type="text" id="field6" name="field6" class="field-style field-split align-right" placeholder="Phone*" />
+                  </li>
+                  <li>
+                     <div class="form-bottom">
+                        <input type="submit" value=""/>
+                        <h4>
+                           YOU CAN ALSO CALL <br/> <span> &nbsp FOR&nbsp A RESERVATION</span>
+                        </h4>
+                        <h3>
+                           1-007 000 005
+                        </h3>
+                     </div>
+                  </li>
+               </ul>
+            </form>
+         </div>
+         <img src="./resourses/form/Image241x234.png" id="floating-image2" alt="img2">
+	  </div>
+	  
+      <div class="happy-clients">
+         <div class="width-wrapper">
+
+			<h1>Happy Clients</h1>
+            <div class="reviews">
+               <div class="slider">
+                  <div class="slides">
+                     <div id="slide-1">
+                        <img src="./resourses/happy_clients/Image 269 x 295.png" alt="img3">
+						<h2>“</h2>
+						<div class="content">
+                           <h3>Best atmosphere and food</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							  <!-- У меня нет сил выбирать эту точку селекторами, пусть висит так -->
+							  <h2 style="  position: absolute;
+							  margin-left: 40vw;
+							  margin-top: -2vw;">
+							  „</h2> 
+						   </p>
+						  
+						   <hr>
+						   
+						   <div class="name-wrapper">
+								<h4>DR. PRABAKARAN JHON</h4>
+								<span>⭐⭐⭐⭐⭐</span>
+						   </div>
+                        </div>
+                     </div>
+                     <div id="slide-2">
+                        2
+                     </div>
+                     <div id="slide-3">
+                        3
+                     </div>
+                  </div>
+               </div>
+               <div class="buttons">
+                  <a href="#slide-1" id="circled-dot" onclick="dotHandler(this.id)">⦿</a>
+                  <a href="#slide-2" id="dot2" onclick="dotHandler(this.id)">◯</a>
+                  <a href="#slide-3" id="dot3" onclick="dotHandler(this.id)">◯</a>
+               </div>
+            </div>
+         </div>
+	  </div>
+
+	  
+	    <div class="gallery">
+			<h1> Our Gallery</h1>
+
+			<div class="gallery js-flickity"
+			data-flickity-options='{ "wrapAround": true }'>
+				<img src="./resourses/gallery/Image 370 x 340.png" class="gallery-cell" alt="img4">
+				<img src="./resourses/gallery/Image 471 x 340.png" class="gallery-cell" alt="img5">
+				<img src="./resourses/gallery/Image 471 x 340.png" class="gallery-cell" alt="img6">
+				<img src="./resourses/gallery/Image 370 x 340.png" class="gallery-cell" alt="img7">
+				<img src="./resourses/gallery/Image 471 x 340.png" class="gallery-cell" alt="img8">
+			</div>
+		</div>
+
+		<div style="margin-top: 10vw;">
+			aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		</div>
+   </body>
+</html>
