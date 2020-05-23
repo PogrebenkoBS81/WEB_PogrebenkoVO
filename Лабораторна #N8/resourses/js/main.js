@@ -15,9 +15,9 @@ class ExchangeTracker {
   constructor(baseURL, symbols, staticFilters, dynamicFilters, token) {
     this.baseURL = baseURL;
     this.symbols = symbols;
-    this.static = staticFilters;
+    this.static  = staticFilters;
     this.dynamic = dynamicFilters;
-    this.token = token;
+    this.token   = token;
     // Time field will be constantly overwrittn by one async function,
     // and read by another. 
     //  And, as I understand, since JS is single threaded,
@@ -27,7 +27,7 @@ class ExchangeTracker {
 
   /**
   * Returns url with required query.
-  * @param {bool} isStatic - If true - returns the URL for recieving all fields in the table, 
+  * @param  {bool}  isStatic - If true - returns the URL for recieving all fields in the table, 
   * returns URL only for dynamic fields otherwise.
   * @return {string} URL with required query.
   */
@@ -40,8 +40,8 @@ class ExchangeTracker {
 
   /**
    * Builds query from given array of properties and property name.
-   * @param {string[]} args - Array of query properties. 
-   * @param {string} name   - Name of query property. 
+   * @param  {string[]} args - Array of query properties. 
+   * @param  {string}   name   - Name of query property. 
    * @return {string} URL query.
    */
   getQuery(args, name) {
@@ -56,7 +56,7 @@ class ExchangeTracker {
 
   /**
    * Returns URL query for recieving all or only dynamic fields in the table.
-   * @param {bool} isStatic - If true - returns the URL for recieving all fields in the table, 
+   * @param  {bool}   isStatic - If true - returns the URL for recieving all fields in the table, 
    * returns URL only for dynamic fields otherwise. 
    * @return {string} URL query for table fields.
    */
@@ -69,7 +69,7 @@ class ExchangeTracker {
 
   /**
    * Receives data from giben URL, and parses it.
-   * @param {string} fetchUrl - URL to fetch. 
+   * @param  {string}   fetchUrl - URL to fetch. 
    * @return {object[]} processed data array.
    */
   async getData(fetchUrl) {
@@ -80,7 +80,7 @@ class ExchangeTracker {
   /**
    * Parses data recieved from API to more convenient format for 
    * building/updating a table.
-   * @param {object[]} data - API url. 
+   * @param  {object[]} data - API url. 
    * @return {object[]} processed data array.
    */
   parseData(data) {
@@ -98,7 +98,7 @@ class ExchangeTracker {
 
   /**
    * Retrieves data from given URL.
-   * @param {string} url - API url. 
+   * @param  {string} url - API url. 
    * @return {object} promise with the json retrieved from API.
    */
   async fetchData(url) {
@@ -131,7 +131,7 @@ class ExchangeTracker {
       // Iterate over values elements. 
       for (let j = 0; j < values.length; j++) {
         // Since table cells and recieved values organised in the same order,
-        // and have same length,
+        // and have the same length,
         // get required cell, and update it with passed value
         tableData[j][i].innerHTML = values[j];
       }
@@ -239,4 +239,4 @@ new ExchangeTracker("https://cloud.iexapis.com/v1/stock/market/batch",
   companies,
   staticFilters,
   dynamicFilters,
-  "").run();
+  "token-placeholder").run();
