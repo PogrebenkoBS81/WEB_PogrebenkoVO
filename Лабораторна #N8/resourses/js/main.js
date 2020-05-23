@@ -198,7 +198,7 @@ class ExchangeTracker {
     const fullURL = this.getUrl(true); // Get URL for all table columns.
     const partialURL = this.getUrl(); // Fet URL for only dynamic columns.
 
-    let columnNames = ["Company name", "Position name", "Latest prise", "Latest prise diff"];
+    let columnNames = ["Company name", "Position name", "Latest priсe", "Latest priсe diff"];
     this.createTable(fullURL, columnNames) // Build table with given column names.
 
     // Run worker wich will update the timer on the page every 0.1 second.
