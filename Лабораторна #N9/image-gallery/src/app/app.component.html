@@ -1,0 +1,42 @@
+<section>
+  <div class="head">
+    <h1 id = "description">Angular image gallery</h1>
+    <hr>
+    <h2>Input your img url to add:</h2>
+    <pre>
+      <input type="url"  #urlInput>
+      <button type="submit"(click) = 'onSubmit(urlInput.value)'>Add</button>
+    </pre>
+
+    <div class="examples">
+      <p>URL examples to add:</p>
+      <p>1) https://cs12.pikabu.ru/post_img/big/2020/05/24/9/1590328820121358366.jpg</p>
+      <p>2) assets/imgs/test.jpg</p>
+    </div>
+  </div>
+</section> 
+
+<section>
+  <br>
+  <div class="gallery">
+    <ng-container *ngFor="let img of images; let i = index">
+        <img *ngIf="img.plain && img.plain.img; else noThumb"
+             class="my-app-custom-image-row"
+             [src]="img.plain.img"
+             (click)="openImageModalRow(img)"
+             [alt]="img.modal.description"/>
+        <ng-template #noThumb>
+          <img class="my-app-custom-image-row"
+               [src]="img.modal.img"
+               (click)="openImageModalRow(img)"
+               [alt]="img.modal.description"/>
+        </ng-template>
+    </ng-container>
+  </div>
+  <ks-modal-gallery [id]="6" [modalImages]="images"
+                    [plainGalleryConfig]="customPlainGalleryRowConfig"
+                    [buttonsConfig]="customButtons"
+                    [loadingConfig]="{enable: true, type: 4}"
+                    (buttonBeforeHook)="onButtonBeforeHook($event)"
+                    (buttonAfterHook)="onButtonAfterHook($event)"></ks-modal-gallery>
+</section>
