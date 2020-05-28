@@ -217,6 +217,7 @@ class ExchangeTracker {
 
 // Company symbols. 
 // Used in URL query to receive data about specific company.
+// The number of companies can be arbitrary.
 companies = [
   "AAPL",
   "FB",
@@ -225,9 +226,7 @@ companies = [
   "MSFT",
   "KO",
   "SPOT",
-  "NFLX",
-  "NOK",
-  "SNE"
+  "NFLX"
 ]
 
 // Fields that won't be dynamicly updated.
