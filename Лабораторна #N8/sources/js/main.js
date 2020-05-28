@@ -41,7 +41,7 @@ class ExchangeTracker {
   /**
    * Builds query from given array of properties and property name.
    * @param  {string[]} args - Array of query properties. 
-   * @param  {string}   name   - Name of query property. 
+   * @param  {string}   name - Name of query property. 
    * @return {string} URL query.
    */
   getQuery(args, name) {
@@ -120,7 +120,7 @@ class ExchangeTracker {
     let tableData = [];
     const keys = Object.keys(data[0]) // Get passed data keys.
 
-    // Get all table cells whouse class that === data key.
+    // Get all table cells whouse class === data key.
     for (const key of keys) {
       tableData.push(document.getElementsByClassName(key));
     }

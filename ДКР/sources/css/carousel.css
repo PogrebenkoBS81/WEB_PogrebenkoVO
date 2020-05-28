@@ -1,0 +1,28 @@
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 22vw;
+  height: 15vw;
+}
+
+.gallery  .flickity-page-dots .dot.is-selected {
+  background:#fea100;
+}
+
+.gallery .flickity-page-dots{
+  bottom: 2vw;
+}
+
+.gallery .flickity-page-dots .dot{
+  width: 0.5vw;
+  height: 0.5vw;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid black;
+}
+
+.flickity-button {
+  display: none;
+}
